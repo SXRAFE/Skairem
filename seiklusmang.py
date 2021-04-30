@@ -113,8 +113,9 @@ def fight(dmg, tüüp):
     return int(enemy_HP)
     
 
-def Quest1():
+def Quest1(): #done
      klahv = pygame.key.get_pressed()
+     mook = False
      global gapple
      mullmull = Jutumull1()
      jutumull_grupp = pygame.sprite.Group()
@@ -130,13 +131,13 @@ def Quest1():
      #if sprite collision
      if klahv[pygame.K_e] and gapple == False:
             mullmull.joonista(screen)
-            
+            mook = False
      if klahv[pygame.K_e] and gapple == True:
             tehtud.joonista(screen)
             auhind.joonista(screen)
             mook = True
             
-        
+     return mook
     
 
 tegelane_pilt = pygame.transform.scale(tegelane_pildid[0], (64, 64))
@@ -222,8 +223,9 @@ tegelane_grupp.add(Tegelane())
 sammud = 10
 null = 0
 
-
-if mook == True:
+#Damage checker#
+moogard = Quest1()
+if moogard == True:
     dmg = 10
 else:
     dmg = 5
