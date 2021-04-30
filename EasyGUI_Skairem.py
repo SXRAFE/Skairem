@@ -62,3 +62,4 @@ def TUTORIAL(): #Seletab reegleid messageboxis
                     INTERACTIMISEKS KÕNNI SPRITE'ILE OTSA
                     
                                EDU SEIKLUSEL!""")
+#EasyGUI osa lõpp -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
