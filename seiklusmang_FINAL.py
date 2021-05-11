@@ -181,14 +181,15 @@ kaib2 = True
 running = True
 heli = True
 
-##########
+########################################### U NEED FOR HELISTUFF
+heli = True
 Hoon = pygame.image.load("Pildid/VolumYES.png").convert_alpha()
 Hooff = pygame.image. load("Pildid/VolumNO.png").convert_alpha()
 Hon = pygame.transform.scale(Hoon, [32,32])
 Hoff = pygame.transform.scale(Hooff, [32,32])
 
 helindus = Hon
-
+###########################################
 while running:
         #joonistab tausta
 
@@ -239,9 +240,9 @@ while running:
     
             #liikumine
     tegelane.liikumine()
-    screen.blit(helindus, [7, 7])
+    screen.blit(helindus, [7, 7]) #ALSO FOR HELISTUFF
         
-# Mängib teatud ruudus teatud muusikat
+# Mängib teatud ruudus teatud muusikat PLS COPY PASTE  CHANGED FEW TING
     if heli == True:
         if kaib == True:
             if mapi_indeks_x == 1 and mapi_indeks_y == 3:
@@ -270,6 +271,7 @@ while running:
             pygame.quit()
     #hiire koordinaadi checkimine (delete later)
 
+################################ MUCH NEED SUCH WOW WOEK MUTE
         if event.type == pygame.KEYDOWN:
             if event.key == pygame.K_m:
                 heli == False
@@ -282,7 +284,7 @@ while running:
 
                 pygame.mixer.music.play(-1)
                 helindus = Hon
-        
+#######################################################        
          
          
         if event.type == pygame.MOUSEBUTTONDOWN and event.button == 1:
